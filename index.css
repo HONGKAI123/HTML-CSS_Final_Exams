@@ -1,0 +1,384 @@
+/* Default setting */
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Navbar */
+.navbar {
+  display: flex;
+  background-color: #333333;
+  min-height: 55px; /*确保小于800px的时候 navbar 背景还在 */
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+.navbar li a:hover {
+  background-color: #67ac5b;
+}
+i {
+  margin-right: 10px;
+}
+.toggle-btn {
+  position: fixed; /*force to always stay at right  */
+  top: 1rem;
+  right: 1rem;
+
+  display: none; /*正常的时候不需要它  */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 21px;
+}
+.toggle-btn .bar {
+  height: 4px;
+  width: 100%;
+  border-radius: 0px;
+  background-color: antiquewhite;
+  color: white;
+}
+.navbar a {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .toggle-btn {
+    display: flex;
+  }
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    /* align-items: flex-start; */
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .navlinks li {
+    text-align: center;
+  }
+  .navlinks.active {
+    display: flex;
+  }
+}
+
+/* Article  */
+.article {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.article_container {
+  display: flex;
+  border: solid black 1px;
+  width: 60%;
+  max-width: 70%;
+  height: 100%;
+
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+p {
+  margin-left: 10px;
+}
+h2 {
+  padding: 0;
+}
+@media (max-width: 800px) {
+  .article_container {
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* shopping checkout cart */
+h1 {
+  font-size: 20px;
+}
+.checkout-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 80%;
+  margin: 50px auto;
+}
+.checkout-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 70%;
+  margin-left: -50px;
+  border: solid 1px lightgrey;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  flex-basis: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.form_info {
+  width: 45%;
+  flex-basis: 50%;
+}
+.cardimg {
+  height: 35px;
+  max-width: 200px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* 每个input上下变宽 */
+  margin-bottom: 20px;
+}
+input {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.flex > div {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+}
+
+.flex > div:first-child {
+  margin-right: 15px;
+}
+
+.flex > div:last-child {
+  margin-left: 15px;
+}
+
+.shipping {
+  margin-top: 10px;
+}
+.ship-add {
+  font-weight: 800;
+  font-size: large;
+}
+
+.sub-btn {
+  position: relative;
+  width: 95%;
+  margin-top: 30px;
+  padding: 0.75rem;
+  color: white;
+  background-color: #4e4b4b;
+  border-radius: 5px;
+}
+.sub-btn:hover {
+  background-color: #67ac5b;
+  box-shadow: 3px 3px 3px 3px #333;
+}
+.form_info .payment {
+  margin-left: 30px;
+}
+
+.cart {
+  border: solid 1px lightgrey;
+  width: 300px;
+  display: flex;
+  padding: 30px;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.cart-title {
+  margin-top: -10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.cart-item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.cart-item a {
+  text-decoration: none;
+}
+hr {
+  color: black;
+}
+
+.cart-total {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.checkout-info {
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .checkout-form {
+    text-align: center;
+  }
+  .checkout-info {
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+  }
+  .form_info {
+    width: 100%;
+  }
+  .form_info .payment {
+    margin: 0 auto;
+  }
+  .cart {
+    margin-top: 50px;
+    width: 70%;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 85%;
+  background-color: #7171be;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.card-container {
+  /* 这里设置成relative 才能让logo根据这个parent调位置 */
+  position: relative;
+  background-color: white;
+  max-width: 35%;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.text {
+  margin: 0%;
+}
+
+.card {
+  padding: 10px 15px;
+}
+
+.card-container.left {
+  left: 10%;
+}
+.card-container.right {
+  left: 55%;
+}
+.highschool {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 108%;
+  z-index: 10;
+}
+
+.college {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 2rem;
+  left: -17.5%;
+  z-index: 10;
+}
+
+.ssl {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 108%;
+  border-radius: 2rem;
+  z-index: 10;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1%;
+  background-color: white;
+  left: 50%;
+  top: 0.1rem;
+
+  z-index: 1;
+}
+
+.arrow-left {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  left: 100%;
+}
+
+.arrow-right {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  right: 100%;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/6784304b9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>HTML&CSS_FINAL</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <a href="#" class="toggle-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navlinks">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user"></i>Login</a>
+            </li>
+            <li>
+              <a href="#timeline"
+                ><i class="fa-solid fa-timeline"></i>TimeLine</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="article">
+        <div class="article_container">
+          <img src="./article.png" />
+          <div class="text_container">
+            <h2>Title Here for the article...</h2>
+            <p>
+              U.S. Here's How Frozen Alligators Survived Last Week's Winner
+              Blast David Lohr, HuffPost 6 hours ago Reactions LikeReblog on
+              Tumblr Share Tweet Eamil Up Next Now playing 2:03 AD
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-form">
+      <div class="checkout-info">
+        <div class="form_info bill">
+          <h1>Billing Address</h1>
+          <form>
+            <div class="form-group">
+              <label for="fullname"
+                ><i class="fa-solid fa-user"></i>Full Name</label
+              >
+              <input type="text" name="fullname" />
+            </div>
+            <div class="form-group">
+              <label for="email"
+                ><i class="fa-solid fa-envelope"></i>Email</label
+              >
+              <input type="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="address"
+                ><i class="fa-solid fa-address-card"></i>Address</label
+              >
+              <input type="text" name="address" />
+            </div>
+            <div class="form-group">
+              <label for="city"
+                ><i class="fa-solid fa-building-columns"></i>City</label
+              >
+              <input type="text" name="city" />
+            </div>
+            <div class="flex">
+              <div>
+                <label for="state">State</label>
+                <input type="text" name="city" placeholder="CA" />
+              </div>
+              <div>
+                <label for="zip">Zip</label>
+                <input type="number" name="zip" placeholder="95133" />
+              </div>
+            </div>
+            <div class="shipping">
+              <input type="checkbox" name="ship" />
+              <span class="ship-add">Shipping address same as billing </span>
+            </div>
+          </form>
+        </div>
+        <div class="form_info payment">
+          <form class="payment">
+            <h1>Payment</h1>
+            <div class="form-group">
+              <label for="fullname">Cards accepted</label>
+              <img src="./card_img.png" class="cardimg" />
+            </div>
+            <div class="form-group">
+              <label for="cardname">Name on Card</label>
+              <input type="text" name="nameoncard" />
+            </div>
+            <div class="form-group">
+              <label for="creditcard">Credit Card Number</label>
+              <input type="number" />
+            </div>
+            <div class="form-group">
+              <label for="Exp Month">Exp Month</label>
+              <input type="number" name="Exp Month" />
+            </div>
+            <div class="flex">
+              <div>
+                <label>Exp Year</label>
+                <input type="number" name="Exp Year" />
+              </div>
+              <div>
+                <label>CVV</label>
+                <input type="number" name="cvv" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="sub-btn">Continute to Checkout</button>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">
+          <h1>Cart</h1>
+
+          <div><i class="fa-solid fa-cart-shopping"></i>4</div>
+        </div>
+        <div class="cart-item">
+          <a href="#">Item1</a>
+          <p>$2</p>
+        </div>
+        <div class="cart-item">
+          <a href="#">Item2</a>
+          <p>$4</p>
+        </div>
+        <div class="cart-item">
+          <a href="#">Item3</a>
+          <p>$9</p>
+        </div>
+        <div class="cart-item">
+          <a href="#">Item4</a>
+          <p>$11</p>
+        </div>
+        <div class="cart-hr">
+          <hr />
+        </div>
+        <div class="cart-total">
+          <h1>Total</h1>
+
+          <div><p class="total">$28</p></div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <div class="card-container left">
+        <img src="./highschool.png" class="highschool" />
+        <div class="card">
+          <h2>2015-2017</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <span class="arrow-left"></span>
+        </div>
+      </div>
+      <div class="card-container right">
+        <img src="./dAFKjmOE_400x400.jpg" class="college" />
+        <div class="card">
+          <h2>2017-2022</h2>
+          <p class="text">
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <span class="arrow-right"></span>
+        </div>
+      </div>
+      <div class="card-container left">
+        <img src="./ssl.png" class="ssl" />
+        <div class="card">
+          <h2>2022-2023</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <span class="arrow-left"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
